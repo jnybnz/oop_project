@@ -74,7 +74,7 @@ class EmployeeRoster {
     }
 
     public function displayHE(): void {
-        echo "--- Hourly Employees ---\n";
+        echo "--- ʜᴏᴜʀʟʏ ᴇᴍᴘʟᴏʏᴇᴇꜱ ---\n";
         foreach ($this->roster as $employee) {
             if ($employee instanceof HourlyEmployee) {
                 echo $employee . "\n";  // Automatically calls __toString()
@@ -83,7 +83,7 @@ class EmployeeRoster {
     }
 
     public function displayPE(): void {
-        echo "--- Piece Workers ---\n";
+        echo "--- ᴘɪᴇᴄᴇ ᴡᴏʀᴋᴇʀꜱ ---\n";
         foreach ($this->roster as $employee) {
             if ($employee instanceof PieceWorker) {
                 echo $employee . "\n";  // Automatically calls __toString()
@@ -92,7 +92,7 @@ class EmployeeRoster {
     }
 
     public function payroll(): void {
-        echo "--- Payroll for All Employees ---\n";
+        echo "--- ᴘᴀʏʀᴏʟʟ ꜰᴏʀ ᴀʟʟ ᴇᴍᴘʟᴏʏᴇᴇꜱ ---\n";
         foreach ($this->roster as $employee) {
             if ($employee !== null) {
                 echo $employee . " - Earnings: $" . $employee->earnings() . "\n";  // Automatically calls __toString()
