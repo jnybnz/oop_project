@@ -92,7 +92,7 @@ class Main {
             case 1:
                 $regularSalary = (float)readline("\nEnter Regular Salary: ");
                 $itemsSold = (int)readline("Enter Items Sold: ");
-                $commissionRate = (float)readline("Enter Commission Rate (%): "); // Change here
+                $commissionRate = (float)readline("Enter Commission Rate(%): "); // Change here
                 $employee = new CommissionEmployee($name, $address, $age, $cName, $regularSalary, $itemsSold, $commissionRate);
                 $this->roster->add($employee);
                 break;
@@ -109,7 +109,7 @@ class Main {
                 $this->roster->add($employee);
                 break;
             default:
-                echo "Invalid input. Please try again.\n";
+                echo "Invalid input. Please try again!\n";
                 readline("Press \"Enter\" key to continue...");
                 $this->empType($name, $address, $age, $cName);
                 return; // Exit to avoid repeat calls
