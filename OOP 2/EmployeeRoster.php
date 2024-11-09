@@ -65,7 +65,7 @@ class EmployeeRoster {
     
 
     public function displayCE(): void {
-        echo "--- Commission Employees ---\n";
+        echo "--- ᴄᴏᴍᴍɪꜱꜱɪᴏɴ ᴇᴍᴘʟᴏʏᴇᴇꜱ ---\n";
         foreach ($this->roster as $employee) {
             if ($employee instanceof CommissionEmployee) {
                 echo $employee . "\n";  // Automatically calls __toString()
