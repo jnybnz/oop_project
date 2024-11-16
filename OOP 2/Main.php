@@ -174,8 +174,8 @@ class Main {
     public function repeat() {
         echo "Employee Added!\n";
         if ($this->roster->count() < $this->size) {
-            $c = readline("Add more? (a to add more): ");
-            if (strtolower($c) == 'a')
+            $c = readline("Add more? (y to continue): ");
+            if (strtolower($c) == 'y')
                 $this->addMenu();
             else
                 $this->entrance();
